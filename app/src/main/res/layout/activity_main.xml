@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/JSet"
+            android:layout_width="200dp"
+            android:layout_height="55dp" />
+        
+        <ImageButton
+            android:id="@+id/findJSbt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/drop"
+            android:scaleType="fitXY"
+            android:onClick="findALLJS"
+            />
+
+        <Button
+            android:id="@+id/searchbt"
+            android:onClick="findCourse"
+            android:text="查询课表"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/SeleteLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    <ImageView
+        android:onClick="yzm"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+        <EditText
+            android:hint="请输入验证码"
+            android:layout_gravity="bottom"
+            android:id="@+id/yzmet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="submityzm"
+            android:text="确定"
+            android:id="@+id/yzmb"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/courselv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
